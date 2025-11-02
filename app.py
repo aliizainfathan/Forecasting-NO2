@@ -5,7 +5,7 @@ import pickle
 st.title("Prediksi Kualitas NO₂")
 
 # --- Load model & scaler ---
-model = pickle.load(open("model_gnb.pkl", "rb"))
+model = pickle.load(open("model_knn.pkl", "rb"))
 scaler = pickle.load(open("scaler.pkl", "rb"))
 
 # --- Prediksi manual ---
