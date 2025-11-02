@@ -1,6 +1,7 @@
 import streamlit as st
 import pandas as pd
 import pickle
+from sklearn.neighbors import KNeighborsRegressor
 
 st.title("Prediksi Kualitas NO₂")
 
