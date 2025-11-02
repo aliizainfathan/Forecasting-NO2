@@ -1,17 +1,12 @@
 import streamlit as st
 import pandas as pd
 import pickle
-import os
 
 st.title("Prediksi Kualitas NO₂")
 
 # --- Load model & scaler ---
-if os.path.exists("model_knn.pkl") and os.path.exists("scaler.pkl"):
-    model = pickle.load(open("model_knn.pkl", "rb"))
-    scaler = pickle.load(open("scaler.pkl", "rb"))
-else:
-    st.error("Model atau scaler belum tersedia. Silakan jalankan training dulu.")
-    st.stop()
+model = pickle.load(open("model_gnb.pkl", "rb"))
+scaler = pickle.load(open("scaler.pkl", "rb"))
 
 # --- Prediksi manual ---
 st.subheader("🔮 Prediksi NO₂ Hari Berikutnya")
