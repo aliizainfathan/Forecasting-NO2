@@ -29,4 +29,4 @@ if st.button("Prediksi"):
     else:
         st.success(f"Direkomendasikan")
 
-    st.info(f"Kadar NO₂ yang diprediksi: {prediksi:.6f} µg/m³")
+    st.info(f"Kadar NO₂ yang diprediksi: {prediksi:.6f} µg/m2")
